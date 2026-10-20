@@ -4,12 +4,18 @@ A simple, mobile-friendly health tracker. Plain HTML, CSS, and vanilla JavaScrip
 
 ## Deploying to GitHub Pages
 
-1. Create a new GitHub repository and push this folder's contents to its `main` branch.
+This repo is published at **https://github.com/jzwonders-lab/myhealthtracker**, with GitHub Pages already enabled (branch `main`, folder `/`), live at:
+
+**https://jzwonders-lab.github.io/myhealthtracker/**
+
+To set this up from scratch on a new repository:
+
+1. Push this folder's contents to the repo's `main` branch.
 2. In the repository, go to **Settings → Pages**.
 3. Under **Build and deployment**, set **Source** to "Deploy from a branch", branch `main`, folder `/ (root)`.
-4. Save. GitHub will publish the site at `https://<your-username>.github.io/<repo-name>/`. Open that URL.
+4. Save. GitHub will publish the site at `https://<your-username>.github.io/<repo-name>/`.
 
-No build step is required — the committed `index.html`, `css/`, `js/`, and `data/` files are served as-is.
+No build step is required — the committed `index.html`, `css/`, `js/`, and `data/` files are served as-is. A `.nojekyll` file is included so GitHub Pages serves everything exactly as committed, without Jekyll processing.
 
 ## Your data stays in your browser
 
