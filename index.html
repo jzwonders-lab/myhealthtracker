@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Health Tracker</title>
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="app-header">
+  <h1>Health Tracker</h1>
+  <button id="btn-settings" class="icon-button" type="button" aria-label="Settings">⚙️ Settings</button>
+</header>
+
+<nav class="main-nav" aria-label="Main">
+  <button class="nav-btn" data-view="home" aria-current="page">🏠<span>Home</span></button>
+  <button class="nav-btn" data-view="food">🍽️<span>Food</span></button>
+  <button class="nav-btn" data-view="workout">🏃<span>Workout</span></button>
+  <button class="nav-btn" data-view="weight">⚖️<span>Weight</span></button>
+</nav>
+
+<div id="data-load-error" class="notice data-load-error" hidden>
+  Could not load the food and workout data files, so the Food and Workout dropdowns are empty.
+  This usually happens when <code>index.html</code> is opened directly from disk (a <code>file://</code> link) instead of through a web server &mdash; browsers block that kind of request for security.
+  Serve this folder with any static server (for example <code>npx serve .</code>) and open the printed <code>http://localhost:...</code> link instead, or visit the deployed GitHub Pages URL.
+</div>
+
+<main id="main-content">
+
+  <!-- ===================== HOME ===================== -->
+  <section id="view-home" class="view">
+    <div class="age60-note" id="home-age60-note" hidden></div>
+
+    <div class="card-grid" id="home-cards"></div>
+
+    <div class="card">
+      <h2>Today's progress</h2>
+      <div class="progress-row">
+        <label>Calories<span id="home-cal-progress-label"></span></label>
+        <div class="progress-bar"><div class="progress-fill" id="home-cal-fill"></div></div>
+      </div>
+      <div class="progress-row">
+        <label>Protein<span id="home-protein-progress-label"></span></label>
+        <div class="progress-bar"><div class="progress-fill" id="home-protein-fill"></div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Net calories</h2>
+      <div id="home-net-detail"></div>
+      <button type="button" class="secondary-button link-button" data-go="food">Open food log &rarr;</button>
+    </div>
+
+    <div class="card">
+      <h2>Workout summary</h2>
+      <div id="home-workout-detail"></div>
+      <button type="button" class="secondary-button link-button" data-go="workout">Open workout log &rarr;</button>
+    </div>
+
+    <div class="card">
+      <h2>Quick links</h2>
+      <div class="quick-links">
+        <button type="button" class="secondary-button link-button" data-go="food">🍽️ Food log &amp; recommended intake</button>
+        <button type="button" class="secondary-button link-button" data-go="workout">🏃 Workout log &amp; recommended activity</button>
+        <button type="button" class="secondary-button link-button" data-go="weight">⚖️ Weight log &amp; BMI</button>
+      </div>
+    </div>
+
+    <div class="card disclaimer" id="home-disclaimer"></div>
+  </section>
+
+  <!-- ===================== FOOD ===================== -->
+  <section id="view-food" class="view" hidden>
+    <div class="card">
+      <h2>Recommended intake for today</h2>
+      <div id="food-recommend"></div>
+      <details class="how-calculated">
+        <summary>How is this calculated?</summary>
+        <div id="food-formula"></div>
+      </details>
+    </div>
+
+    <div class="card">
+      <h2>Today's macros (g)</h2>
+      <div class="chart-wrap"><canvas id="chart-macros" width="400" height="260"></canvas></div>
+      <p class="chart-summary" id="chart-macros-summary"></p>
+    </div>
+
+    <div class="card">
+      <h2>Log a food</h2>
+      <label for="food-select">Food</label>
+      <select id="food-select">
+        <option value="">Choose a food&hellip;</option>
+      </select>
+      <p class="hint" id="food-picked-source"></p>
+
+      <div id="food-picked" class="picked-box" hidden>
+        <label for="food-grams">Grams</label>
+        <input id="food-grams" type="number" min="1" step="1" placeholder="e.g. 250" />
+        <div class="live-preview" id="food-live-preview"></div>
+        <button id="food-add-btn" class="primary-button" type="button">Add to today's log</button>
+      </div>
+
+      <details class="custom-entry">
+        <summary>Add a custom food</summary>
+        <form id="custom-food-form">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" required />
+          <div class="field-row">
+            <div><label for="cf-kcal">kcal / 100g</label><input id="cf-kcal" type="number" min="0" step="0.1" required /></div>
+            <div><label for="cf-protein">Protein g / 100g</label><input id="cf-protein" type="number" min="0" step="0.1" required /></div>
+          </div>
+          <div class="field-row">
+            <div><label for="cf-carbs">Carbs g / 100g</label><input id="cf-carbs" type="number" min="0" step="0.1" required /></div>
+            <div><label for="cf-fat">Fat g / 100g</label><input id="cf-fat" type="number" min="0" step="0.1" required /></div>
+          </div>
+          <p class="hint">Labelled "User-entered, not verified" throughout the app.</p>
+          <button type="submit" class="primary-button">Save custom food</button>
+        </form>
+      </details>
+    </div>
+
+    <div class="card">
+      <h2>Today's food entries</h2>
+      <div id="food-entries-list" class="entries-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>Calories eaten — last 14 days</h2>
+      <div class="chart-wrap"><canvas id="chart-food-14d" width="400" height="260"></canvas></div>
+      <p class="chart-summary" id="chart-food-14d-summary"></p>
+    </div>
+  </section>
+
+  <!-- ===================== WORKOUT ===================== -->
+  <section id="view-workout" class="view" hidden>
+    <div class="card" id="workout-blocked-card" hidden>
+      <p class="notice">Workout estimates are available for ages 19 and over.</p>
+    </div>
+
+    <div class="card" id="workout-recommend-card">
+      <h2>Recommended activity for today</h2>
+      <div id="workout-recommend"></div>
+      <details class="how-calculated">
+        <summary>How is this calculated?</summary>
+        <div id="workout-formula"></div>
+      </details>
+    </div>
+
+    <div class="card" id="workout-form-card">
+      <h2>Log a workout</h2>
+      <label for="workout-select">Activity</label>
+      <select id="workout-select"></select>
+      <p class="hint" id="workout-code-hint"></p>
+
+      <label for="workout-minutes">Duration (minutes)</label>
+      <input id="workout-minutes" type="number" min="1" max="600" step="1" placeholder="e.g. 30" />
+      <div class="live-preview" id="workout-live-preview"></div>
+      <button id="workout-add-btn" class="primary-button" type="button">Add to today's log</button>
+
+      <details class="custom-entry">
+        <summary>Custom MET activity</summary>
+        <form id="custom-met-form">
+          <label for="cm-name">Activity name</label>
+          <input id="cm-name" type="text" required />
+          <label for="cm-met">MET value</label>
+          <input id="cm-met" type="number" min="0.1" step="0.1" required />
+          <label for="cm-minutes">Duration (minutes)</label>
+          <input id="cm-minutes" type="number" min="1" max="600" step="1" required />
+          <p class="hint">Labelled "User-supplied, not verified."</p>
+          <button type="submit" class="primary-button">Add to today's log</button>
+        </form>
+      </details>
+    </div>
+
+    <div class="card">
+      <h2>Today's workouts</h2>
+      <div id="workout-entries-list" class="entries-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>Kcal burned — last 14 days</h2>
+      <div class="chart-wrap"><canvas id="chart-workout-14d" width="400" height="260"></canvas></div>
+      <p class="chart-summary" id="chart-workout-14d-summary"></p>
+    </div>
+  </section>
+
+  <!-- ===================== WEIGHT ===================== -->
+  <section id="view-weight" class="view" hidden>
+    <div class="card">
+      <h2>Log your weight</h2>
+      <label for="weight-date">Date</label>
+      <input id="weight-date" type="date" />
+      <label for="weight-value">Weight (kg)</label>
+      <input id="weight-value" type="number" min="30" max="300" step="0.1" />
+      <p class="hint">One entry per date. Saving again for the same date replaces it.</p>
+      <button id="weight-save-btn" class="primary-button" type="button">Save weight</button>
+      <div id="weight-bmi-box" class="live-preview"></div>
+    </div>
+
+    <div class="card">
+      <h2>Weight history</h2>
+      <div id="weight-entries-list" class="entries-list"></div>
+    </div>
+
+    <div class="card">
+      <h2>Weight over time</h2>
+      <div class="chart-wrap"><canvas id="chart-weight" width="400" height="260"></canvas></div>
+      <p class="chart-summary" id="chart-weight-summary"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== WELCOME BACK (existing vs new user) ===================== -->
+<div id="modal-welcome-back" class="modal-overlay" hidden>
+  <div class="modal-box">
+    <h2 id="welcome-back-heading">Welcome back!</h2>
+    <p>We found saved data in this browser. Continue with it, or start fresh as a new user.</p>
+    <button id="btn-continue-existing" class="primary-button" type="button">Continue as existing user</button>
+    <button id="btn-start-fresh" class="secondary-button" type="button">Start fresh (new user)</button>
+
+    <div id="start-fresh-confirm" hidden>
+      <div class="error-box">
+        This permanently deletes all data saved in this browser (profile, logs, custom foods) and cannot be undone. Export a backup first if you want to keep it.
+      </div>
+      <button id="btn-start-fresh-yes" class="primary-button" type="button">Yes, delete everything and start fresh</button>
+      <button id="btn-start-fresh-cancel" class="secondary-button" type="button">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== ONBOARDING MODAL ===================== -->
+<div id="modal-onboarding" class="modal-overlay" hidden>
+  <div class="modal-box">
+    <h2>Welcome! Let's set up your profile</h2>
+    <form id="onboarding-form">
+      <label for="ob-nickname">Nickname (optional)</label>
+      <input id="ob-nickname" type="text" />
+
+      <label>Sex</label>
+      <div class="radio-row">
+        <label><input type="radio" name="ob-sex" value="male" required /> Male</label>
+        <label><input type="radio" name="ob-sex" value="female" /> Female</label>
+      </div>
+
+      <label for="ob-age">Age (13 to 100)</label>
+      <input id="ob-age" type="number" min="13" max="100" step="1" required />
+
+      <label for="ob-height">Height (cm, 100 to 230)</label>
+      <input id="ob-height" type="number" min="100" max="230" step="0.1" required />
+
+      <label for="ob-weight">Current weight (kg, 30 to 300)</label>
+      <input id="ob-weight" type="number" min="30" max="300" step="0.1" required />
+
+      <label>Goal</label>
+      <div class="radio-row">
+        <label><input type="radio" name="ob-goal" value="lose" required /> Lose weight</label>
+        <label><input type="radio" name="ob-goal" value="gain" /> Gain muscle</label>
+        <label><input type="radio" name="ob-goal" value="maintain" /> Maintain</label>
+      </div>
+
+      <div id="onboarding-errors" class="error-box" hidden></div>
+      <button type="submit" class="primary-button">Get started</button>
+    </form>
+  </div>
+</div>
+
+<!-- ===================== SETTINGS MODAL ===================== -->
+<div id="modal-settings" class="modal-overlay" hidden>
+  <div class="modal-box">
+    <h2>Settings</h2>
+    <form id="settings-form">
+      <label for="st-nickname">Nickname (optional)</label>
+      <input id="st-nickname" type="text" />
+
+      <label>Sex</label>
+      <div class="radio-row">
+        <label><input type="radio" name="st-sex" value="male" required /> Male</label>
+        <label><input type="radio" name="st-sex" value="female" /> Female</label>
+      </div>
+
+      <label for="st-age">Age (13 to 100)</label>
+      <input id="st-age" type="number" min="13" max="100" step="1" required />
+
+      <label for="st-height">Height (cm, 100 to 230)</label>
+      <input id="st-height" type="number" min="100" max="230" step="0.1" required />
+
+      <label for="st-weight">Current weight (kg, 30 to 300)</label>
+      <input id="st-weight" type="number" min="30" max="300" step="0.1" required />
+
+      <label>Goal</label>
+      <div class="radio-row">
+        <label><input type="radio" name="st-goal" value="lose" required /> Lose weight</label>
+        <label><input type="radio" name="st-goal" value="gain" /> Gain muscle</label>
+        <label><input type="radio" name="st-goal" value="maintain" /> Maintain</label>
+      </div>
+
+      <div id="settings-errors" class="error-box" hidden></div>
+      <button type="submit" class="primary-button">Save settings</button>
+    </form>
+
+    <hr />
+    <h3>Export / Import data</h3>
+    <button id="btn-export" type="button" class="secondary-button">Export data (.json)</button>
+
+    <label for="import-file">Import data</label>
+    <input id="import-file" type="file" accept="application/json" />
+    <div class="radio-row">
+      <label><input type="radio" name="import-mode" value="merge" checked /> Merge (keep newer entry per date)</label>
+      <label><input type="radio" name="import-mode" value="replace" /> Replace all data</label>
+    </div>
+    <button id="btn-import" type="button" class="secondary-button">Import</button>
+    <div id="import-errors" class="error-box" hidden></div>
+    <div id="import-success" class="success-box" hidden></div>
+
+    <button id="btn-close-settings" type="button" class="secondary-button">Close</button>
+  </div>
+</div>
+
+<div id="confirm-replace" class="modal-overlay" hidden>
+  <div class="modal-box">
+    <h2>Replace all data?</h2>
+    <p>This will permanently delete all current data in this browser and replace it with the imported file. This cannot be undone.</p>
+    <button id="confirm-replace-yes" class="primary-button" type="button">Yes, replace all data</button>
+    <button id="confirm-replace-no" class="secondary-button" type="button">Cancel</button>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="js/calc.js"></script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,392 @@
+[
+  {
+    "code": "17151",
+    "name": "Walking, less than 2.0 mph, level, strolling, very slow",
+    "category": "Walking",
+    "met": 2.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17152",
+    "name": "Walking, 2.0 to 2.4 mph, level, slow pace, firm surface",
+    "category": "Walking",
+    "met": 2.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17190",
+    "name": "Walking, 2.8 to 3.4 mph, level, moderate pace, firm surface",
+    "category": "Walking",
+    "met": 3.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17200",
+    "name": "Walking, 3.5 to 3.9 mph, level, brisk, firm surface, walking for exercise",
+    "category": "Walking",
+    "met": 4.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17220",
+    "name": "Walking, 4.0 to 4.4 mph (6.4 to 7.0 km/h), level, firm surface, very brisk pace",
+    "category": "Walking",
+    "met": 5.5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17230",
+    "name": "Walking, 4.5 to 4.9 mph, level, firm surface, very, very brisk",
+    "category": "Walking",
+    "met": 7,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17231",
+    "name": "Walking, 5.0 to 5.5 mph (8.8 to 8.9 km/h), level, firm surface",
+    "category": "Walking",
+    "met": 8.5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "12010",
+    "name": "Jog/walk combination (jogging component of less than 10 minutes) (Taylor Code 180)",
+    "category": "Running & Jogging",
+    "met": 6,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "12020",
+    "name": "Jogging, general, self-selected pace",
+    "category": "Running & Jogging",
+    "met": 7.5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "12026",
+    "name": "Jogging 2.6 to 3.7 mph",
+    "category": "Running & Jogging",
+    "met": 3.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "12028",
+    "name": "Running, 4 to 4.2 mph (13 min/mile)",
+    "category": "Running & Jogging",
+    "met": 6.5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "12030",
+    "name": "Running, 5.0 to 5.2 mph (12 min/mile)",
+    "category": "Running & Jogging",
+    "met": 8.5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "12050",
+    "name": "Running, 6-6.3 mph (10 min/mile)",
+    "category": "Running & Jogging",
+    "met": 9.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "12070",
+    "name": "Running, 7 mph (8.5 min/mile)",
+    "category": "Running & Jogging",
+    "met": 11,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "12120",
+    "name": "Running, 10 mph (6 min/mile)",
+    "category": "Running & Jogging",
+    "met": 14.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "01010",
+    "name": "Bicycling, <10 mph, leisure, to work or for pleasure (Taylor Code 115)",
+    "category": "Bicycling",
+    "met": 4,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "01015",
+    "name": "Bicycling, self-selected easy pace",
+    "category": "Bicycling",
+    "met": 4.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "01016",
+    "name": "Bicycling, self-selected moderate pace",
+    "category": "Bicycling",
+    "met": 7,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "01020",
+    "name": "Bicycling, 10-11.9 mph, leisure, slow, light effort",
+    "category": "Bicycling",
+    "met": 6.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "18292",
+    "name": "Swimming, crawl, slow speed, 30-45 yards/minute, moderate effort",
+    "category": "Swimming",
+    "met": 5.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "18255",
+    "name": "Swimming, backstroke, recreational",
+    "category": "Swimming",
+    "met": 4.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "18265",
+    "name": "Swimming breaststroke, recreational",
+    "category": "Swimming",
+    "met": 5.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02150",
+    "name": "Yoga, Hatha",
+    "category": "Yoga",
+    "met": 2.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02153",
+    "name": "Yoga, Hatha, high intensity",
+    "category": "Yoga",
+    "met": 8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02052",
+    "name": "Resistance (weight) training, squats, deadlift, slow or explosive effort",
+    "category": "Resistance Training",
+    "met": 5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02054",
+    "name": "Resistance (weight) training, multiple exercises, 8-15 reps at varied resistance",
+    "category": "Resistance Training",
+    "met": 3.5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02068",
+    "name": "Rope skipping exercise, general",
+    "category": "Rope Jumping",
+    "met": 11,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02069",
+    "name": "Jumping rope, Digi-Jump Machine, 120 jumps/minute",
+    "category": "Rope Jumping",
+    "met": 9,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "15550",
+    "name": "Rope jumping, fast pace, 120-160 skips/min",
+    "category": "Rope Jumping",
+    "met": 12.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "15551",
+    "name": "Rope jumping, moderate pace, general, 100 to 120 skips/min, 2 foot skip, plain bounce",
+    "category": "Rope Jumping",
+    "met": 11.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "15552",
+    "name": "Rope jumping, slow pace, <100 skips/min, 2 foot skip, rhythm bounce",
+    "category": "Rope Jumping",
+    "met": 8.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17130",
+    "name": "Stair climbing, using or climbing up ladder (Taylor Code 030)",
+    "category": "Stair Climbing",
+    "met": 8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17131",
+    "name": "Stair climbing, general",
+    "category": "Stair Climbing",
+    "met": 6.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17133",
+    "name": "Stair climbing, slow pace",
+    "category": "Stair Climbing",
+    "met": 4.5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "17134",
+    "name": "Stair climbing, fast pace, one step at a time",
+    "category": "Stair Climbing",
+    "met": 9.3,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02020",
+    "name": "Calisthenics (e.g., pushups, sit ups, pull-ups, jumping jacks, burpees), vigorous effort",
+    "category": "Calisthenics",
+    "met": 7.5,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02022",
+    "name": "Calisthenics (e.g., pushups, sit ups, pull-ups, lunges), moderate effort",
+    "category": "Calisthenics",
+    "met": 3.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02024",
+    "name": "Calisthenics (e.g., curl ups, abdominal crunches, plank), light effort",
+    "category": "Calisthenics",
+    "met": 2.8,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  },
+  {
+    "code": "02032",
+    "name": "Circuit training, body weight exercises",
+    "category": "Circuit Training",
+    "met": 6,
+    "source": "2024 Adult Compendium of Physical Activities, J Sport Health Sci 2024;13(1):6-12",
+    "source_file": "compendium_adult_sample.csv",
+    "verified": false,
+    "verification_status": "unverified-extract"
+  }
+]

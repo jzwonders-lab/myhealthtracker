@@ -1,0 +1,722 @@
+[
+  {
+    "id": "steamed-chicken-rice",
+    "name": "Steamed Chicken Rice",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 2,
+    "per100g": {
+      "kcal": 189,
+      "protein_g": 9.3,
+      "carbs_g": 21.2,
+      "fat_g": 7.4
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "roasted-chicken-rice",
+    "name": "Roasted Chicken Rice",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 3,
+    "per100g": {
+      "kcal": 184,
+      "protein_g": 8.3,
+      "carbs_g": 23.4,
+      "fat_g": 6.3
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "char-kuay-teow",
+    "name": "Char Kuay Teow",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 4,
+    "per100g": {
+      "kcal": 182,
+      "protein_g": 4,
+      "carbs_g": 27.4,
+      "fat_g": 6.3
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "yang-zhou-fried-rice",
+    "name": "Yang Zhou Fried Rice",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 5,
+    "per100g": {
+      "kcal": 178,
+      "protein_g": 5.8,
+      "carbs_g": 27.7,
+      "fat_g": 4.9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "fried-carrot-cake",
+    "name": "Fried Carrot Cake",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 6,
+    "per100g": {
+      "kcal": 175,
+      "protein_g": 9,
+      "carbs_g": 8.9,
+      "fat_g": 11.5
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "sin-chew-bee-hoon",
+    "name": "Sin Chew Bee Hoon",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 7,
+    "per100g": {
+      "kcal": 165,
+      "protein_g": 6.6,
+      "carbs_g": 22.7,
+      "fat_g": 5.2
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "minced-meat-mee-pok",
+    "name": "Minced Meat Mee Pok",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 8,
+    "per100g": {
+      "kcal": 162,
+      "protein_g": 8.3,
+      "carbs_g": 16.6,
+      "fat_g": 6.9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "economical-mee-goreng",
+    "name": "Economical Mee Goreng",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 9,
+    "per100g": {
+      "kcal": 162,
+      "protein_g": 3.5,
+      "carbs_g": 31.9,
+      "fat_g": 2.2
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "lor-mai-kai",
+    "name": "Lor Mai Kai",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 10,
+    "per100g": {
+      "kcal": 154,
+      "protein_g": 4.2,
+      "carbs_g": 30.6,
+      "fat_g": 1.7
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "laska",
+    "name": "Laska",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 11,
+    "per100g": {
+      "kcal": 153,
+      "protein_g": 8,
+      "carbs_g": 18.3,
+      "fat_g": 5.3
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "ban-mian-dry",
+    "name": "Ban Mian Dry",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 12,
+    "per100g": {
+      "kcal": 148,
+      "protein_g": 6.7,
+      "carbs_g": 21.3,
+      "fat_g": 4
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "steamed-chicken-noodle",
+    "name": "Steamed Chicken Noodle",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 13,
+    "per100g": {
+      "kcal": 143,
+      "protein_g": 10.8,
+      "carbs_g": 17.4,
+      "fat_g": 3.3
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "fried-hokkien-mee",
+    "name": "Fried Hokkien Mee",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 14,
+    "per100g": {
+      "kcal": 136,
+      "protein_g": 5.5,
+      "carbs_g": 25.1,
+      "fat_g": 1.5
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "char-siew-wanton-noodle",
+    "name": "Char Siew Wanton Noodle",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 15,
+    "per100g": {
+      "kcal": 120,
+      "protein_g": 7.9,
+      "carbs_g": 18.4,
+      "fat_g": 1.6
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "dumpling-you-mian",
+    "name": "Dumpling You Mian",
+    "category": "Chinese",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 16,
+    "per100g": {
+      "kcal": 119,
+      "protein_g": 5.5,
+      "carbs_g": 18.2,
+      "fat_g": 2.6
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "ayam-penyet",
+    "name": "Ayam Penyet",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 17,
+    "per100g": {
+      "kcal": 203,
+      "protein_g": 8.9,
+      "carbs_g": 21.7,
+      "fat_g": 9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "nasi-kampung-goreng",
+    "name": "Nasi Kampung Goreng",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 18,
+    "per100g": {
+      "kcal": 191,
+      "protein_g": 7.1,
+      "carbs_g": 24.6,
+      "fat_g": 7.1
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "nasi-lemak",
+    "name": "Nasi Lemak",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 19,
+    "per100g": {
+      "kcal": 188,
+      "protein_g": 9.2,
+      "carbs_g": 17.7,
+      "fat_g": 9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "ikan-penyet",
+    "name": "Ikan Penyet",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 20,
+    "per100g": {
+      "kcal": 183,
+      "protein_g": 7.8,
+      "carbs_g": 22.2,
+      "fat_g": 7
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "nasi-ambang",
+    "name": "Nasi Ambang",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 21,
+    "per100g": {
+      "kcal": 175,
+      "protein_g": 9.2,
+      "carbs_g": 18.3,
+      "fat_g": 7.2
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "goreng-pisang",
+    "name": "Goreng Pisang",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 22,
+    "per100g": {
+      "kcal": 175,
+      "protein_g": 0.4,
+      "carbs_g": 30.9,
+      "fat_g": 5.6
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "tahu-goreng",
+    "name": "Tahu Goreng",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 23,
+    "per100g": {
+      "kcal": 165,
+      "protein_g": 10.3,
+      "carbs_g": 8.8,
+      "fat_g": 9.9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "mee-soto",
+    "name": "Mee Soto",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 24,
+    "per100g": {
+      "kcal": 153,
+      "protein_g": 9.2,
+      "carbs_g": 20.3,
+      "fat_g": 2.9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "mee-bandung",
+    "name": "Mee Bandung",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 25,
+    "per100g": {
+      "kcal": 149,
+      "protein_g": 7.5,
+      "carbs_g": 18.1,
+      "fat_g": 5.2
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "mee-bakso",
+    "name": "Mee Bakso",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 26,
+    "per100g": {
+      "kcal": 146,
+      "protein_g": 5.7,
+      "carbs_g": 25.9,
+      "fat_g": 2.2
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "lotong",
+    "name": "Lotong",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 27,
+    "per100g": {
+      "kcal": 142,
+      "protein_g": 8.2,
+      "carbs_g": 12.4,
+      "fat_g": 6.6
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "mee-siam",
+    "name": "Mee Siam",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 28,
+    "per100g": {
+      "kcal": 141,
+      "protein_g": 4.9,
+      "carbs_g": 24.3,
+      "fat_g": 2.7
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "kentang-ball-with-rice-cube",
+    "name": "Kentang Ball with Rice Cube",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 29,
+    "per100g": {
+      "kcal": 117,
+      "protein_g": 5.4,
+      "carbs_g": 15.1,
+      "fat_g": 3.9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "soto-ayam",
+    "name": "Soto Ayam",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 30,
+    "per100g": {
+      "kcal": 115,
+      "protein_g": 6.2,
+      "carbs_g": 19.1,
+      "fat_g": 1.5
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "mee-rebus",
+    "name": "Mee Rebus",
+    "category": "Malay",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 31,
+    "per100g": {
+      "kcal": 113,
+      "protein_g": 3.7,
+      "carbs_g": 19,
+      "fat_g": 2.4
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "original-appam",
+    "name": "Original Appam",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 32,
+    "per100g": {
+      "kcal": 249,
+      "protein_g": 2.9,
+      "carbs_g": 47.1,
+      "fat_g": 5.4
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "egg-appam",
+    "name": "Egg Appam",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 33,
+    "per100g": {
+      "kcal": 211,
+      "protein_g": 4.2,
+      "carbs_g": 34.7,
+      "fat_g": 6.4
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "roti-prata",
+    "name": "Roti Prata",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 34,
+    "per100g": {
+      "kcal": 208,
+      "protein_g": 2.5,
+      "carbs_g": 35.5,
+      "fat_g": 6.2
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "egg-prata-with-chicken-curry",
+    "name": "Egg Prata with Chicken Curry",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 35,
+    "per100g": {
+      "kcal": 187,
+      "protein_g": 7.7,
+      "carbs_g": 23.1,
+      "fat_g": 7.1
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "boneless-mutton-biryani",
+    "name": "Boneless Mutton Biryani",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 36,
+    "per100g": {
+      "kcal": 174,
+      "protein_g": 8.7,
+      "carbs_g": 14.7,
+      "fat_g": 8.9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "poori-set",
+    "name": "Poori Set",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 37,
+    "per100g": {
+      "kcal": 171,
+      "protein_g": 6.6,
+      "carbs_g": 21,
+      "fat_g": 6.8
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "marsala-thosai",
+    "name": "Marsala Thosai",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 38,
+    "per100g": {
+      "kcal": 171,
+      "protein_g": 7,
+      "carbs_g": 20.2,
+      "fat_g": 6.9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "naan",
+    "name": "Naan",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 39,
+    "per100g": {
+      "kcal": 167,
+      "protein_g": 5.2,
+      "carbs_g": 27.5,
+      "fat_g": 3.9
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "chapatti-set-with-potato",
+    "name": "Chapatti Set with Potato",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 40,
+    "per100g": {
+      "kcal": 166,
+      "protein_g": 6,
+      "carbs_g": 21.8,
+      "fat_g": 6.1
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "putu-mayam",
+    "name": "Putu Mayam",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 41,
+    "per100g": {
+      "kcal": 162,
+      "protein_g": 1.8,
+      "carbs_g": 32.8,
+      "fat_g": 2.6
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "chapatti-set-with-potato-marsala",
+    "name": "Chapatti Set with Potato Marsala",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 42,
+    "per100g": {
+      "kcal": 156,
+      "protein_g": 4.5,
+      "carbs_g": 27.2,
+      "fat_g": 3.2
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "idli-set",
+    "name": "Idli Set",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 43,
+    "per100g": {
+      "kcal": 153,
+      "protein_g": 6.1,
+      "carbs_g": 17.4,
+      "fat_g": 6.5
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "egg-thosai",
+    "name": "Egg Thosai",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 44,
+    "per100g": {
+      "kcal": 149,
+      "protein_g": 7.5,
+      "carbs_g": 17,
+      "fat_g": 5.7
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "vegetable-biryani",
+    "name": "Vegetable Biryani",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 45,
+    "per100g": {
+      "kcal": 142,
+      "protein_g": 4.2,
+      "carbs_g": 18.8,
+      "fat_g": 5.6
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  },
+  {
+    "id": "veg-set-meal-biryani-rice",
+    "name": "Veg Set Meal (Biryani Rice)",
+    "category": "Indian",
+    "source": "Yeo et al. (2021), Foods 10(7):1659",
+    "source_file": "sg_meals_yeo2021.csv",
+    "source_row": 46,
+    "per100g": {
+      "kcal": 125,
+      "protein_g": 3.6,
+      "carbs_g": 20.3,
+      "fat_g": 3.2
+    },
+    "verified": true,
+    "retrieved": "2026-10-19"
+  }
+]
